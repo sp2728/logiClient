@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
       this.dataService.postLogin(this.loginData).subscribe((res) => {
         if (res['success']) {
           this.localStorageService.setUser(this.loginData['username']);
-          this.router.navigate(['/'])
+          this.router.navigate(['/profile'])
         }
         else {
           this.error = "Invalid username or password";

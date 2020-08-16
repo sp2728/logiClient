@@ -9,6 +9,12 @@ export class DataService {
 
   constructor(private localStorageService:LocalStorageService, private http:HttpClient) { }
 
+
+  isUserLoggedIn(): boolean {
+    if (this.localStorageService.getUser()) {return true;} 
+    else {return false;}
+  }
+  
   getProfile(){
     return this.http.get('profile/'+this.localStorageService.getUser());
   }
