@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="card">
+            <div class="card-header h5"> Profile Details <span><a class="btn btn-primary" (click)="logout()" >Logout</a></span> </div>
+            <div class="card-body" *ngIf=user>
+        
+              <div class="row p-3">
+                <span class="col-lg font-weight-bold"> Username: </span><span class="col-lg">{{user.username}}</span>
+              </div>
+              <div class="row p-3">
+                <span class="col-lg font-weight-bold"> Email Id: </span><span class="col-lg">{{user.email}}</span>
+              </div>
+        
+            </div>
+          </div>
+    </div>
+</div>

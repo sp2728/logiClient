@@ -1,0 +1,8 @@
+.wrapper{
+    display: grid;
+    place-items: center;
+    overflow-x: scroll;
+
+}
+
+
